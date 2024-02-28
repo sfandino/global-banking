@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-28T21:30:56.261Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15" etag="_j3E1T2yQt_TXVpucI5L" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-28T22:25:17.424Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15" etag="IHAT-LgNYHzfZihR4TV0" version="23.1.6" type="github">
   <diagram name="Page-1" id="j7WM0uQH34lMeTY0Ia8Q">
-    <mxGraphModel dx="2520" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2858" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -626,11 +626,6 @@
             <mxPoint x="-1266.08" y="907.29" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LRDg_d1w-ltFCqQjLDjJ-313" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LRDg_d1w-ltFCqQjLDjJ-324" target="LRDg_d1w-ltFCqQjLDjJ-276">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1100" y="846" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="LRDg_d1w-ltFCqQjLDjJ-318" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.993;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="LRDg_d1w-ltFCqQjLDjJ-320">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-837" y="76" as="sourcePoint" />
@@ -650,7 +645,7 @@
           <mxGeometry x="-850" y="86" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="LRDg_d1w-ltFCqQjLDjJ-324" value="TBL_BANK_COMPETITOR_CHANGE_EVENTS" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
-          <mxGeometry x="-1260" y="816" width="320" height="150" as="geometry" />
+          <mxGeometry x="-1220" y="920" width="320" height="150" as="geometry" />
         </mxCell>
         <mxCell id="LRDg_d1w-ltFCqQjLDjJ-325" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" vertex="1" parent="LRDg_d1w-ltFCqQjLDjJ-324">
           <mxGeometry y="30" width="320" height="30" as="geometry" />
@@ -703,6 +698,9 @@
           <mxGeometry x="30" width="290" height="30" as="geometry">
             <mxRectangle width="290" height="30" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="LRDg_d1w-ltFCqQjLDjJ-338" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="LRDg_d1w-ltFCqQjLDjJ-254" target="LRDg_d1w-ltFCqQjLDjJ-276">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
