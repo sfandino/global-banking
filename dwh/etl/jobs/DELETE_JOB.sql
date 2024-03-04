@@ -5,17 +5,23 @@
 -- data cannot be traced back or matched with previous SHA256 hashed fields, maintaining
 -- privacy and compliance with data protection regulations.
 
-UPDATE `global-tech-ai.global_banking_protected.TBL_OB_ACCOUNT` ob
-SET 
-  ob.REAL_CUST_ID = -1,
-  ob.REAL_ACNO = "NO_CONSENT"
-FROM `global-tech-ai.global_banking_protected.TBL_CUSTOMER_CONSENT` cc
-WHERE 
-  ob.REAL_CUST_ID = cc.REAL_CUST_ID
-  AND cc.CONSENT = FALSE
-  AND EXISTS (
-    SELECT 1
-    FROM `global-tech-ai.global_banking_protected.TBL_CUSTOMER_CONSENT`
-    WHERE REAL_CUST_ID = ob.REAL_CUST_ID
-      AND CONSENT = FALSE
-  );
+MERGE INTO `global-tech-ai.global_banking_protected.TBL_OB_ACCOUNT_backup_copy2` AS accounts
+USING (
+    WITH RankedConsents AS (
+      SELECT
+        REAL_CUST_ID,
+        BANK_CODE,
+        CONSENT,
+        EVENT_TIME,
+        ROW_NUMBER() OVER (PARTITION BY REAL_CUST_ID, BANK_CODE ORDER BY EVENT_TIME DESC) as rn
+      FROM `global-tech-ai.global_banking_protected.TBL_CUSTOMER_CONSENT`
+    )
+    SELECT
+      REAL_CUST_ID,
+      BANK_CODE
+    FROM RankedConsents
+    WHERE rn = 1 AND CONSENT = FALSE
+) AS consents
+ON accounts.REAL_CUST_ID = consents.REAL_CUST_ID AND accounts.BANK_CODE = consents.BANK_CODE
+WHEN MATCHED THEN
+  UPDATE SET accounts.REAL_CUST_ID = -1, accounts.REAL_ACNO = 'NO CONSENT'

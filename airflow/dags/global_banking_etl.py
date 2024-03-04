@@ -37,17 +37,6 @@ def dbt_main_pipeline():
         command = f"source {activate_env} && dbt run --project-dir {dbt_project_dir}"
         subprocess.run(command, shell=True, check=True, executable='/bin/bash')
     
-    # @task
-    # def run_dbt():
-    #     activate_env = "env_global_banking"
-    #     dbt_project_dir = "/Users/camifandino/Documents/projects/global-banking/dbt/dbt_global_banking"
-    #     run_dbt_task = BashOperator(
-    #         task_id='run_dbt',
-    #         bash_command=f"{activate_env} && dbt run --project-dir {dbt_project_dir}",
-    #     )
-    #     run_dbt_task.execute(dict())
-
-
     @task
     def delete_no_consent_users():
         """
@@ -62,9 +51,9 @@ def dbt_main_pipeline():
             task_id='run_bigquery_delete_query',
             sql=sql_query,
             use_legacy_sql=False,
-            bigquery_conn_id='gcp_global_banking'
+            gcp_conn_id='gcp_global_banking'
         )
-        delete_job.execute(dict())
+        #delete_job.execute(dict())
 
     # Define task dependencies
     dbt_task = run_dbt()

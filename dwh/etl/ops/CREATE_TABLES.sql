@@ -9,7 +9,7 @@ CREATE TABLE `global-tech-ai.global_banking_protected.TBL_OB_ACCOUNT` (
 );
 
 -- Creating the TBL_OB_ACCOUNT table with hashed columns
-CREATE TABLE `global-tech-ai.global_banking_protected.TBL_OB_ACCOUNTw` (
+CREATE TABLE `global-tech-ai.global_banking_protected.TBL_OB_ACCOUNT` (
   BANK_CODE STRING NOT NULL,
   REAL_ACNO STRING NOT NULL,
   REAL_CUST_ID NUMERIC NOT NULL,
