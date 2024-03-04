@@ -1,5 +1,6 @@
 from airflow.decorators import dag, task
 from airflow.providers.google.cloud.operators.bigquery import BigQueryExecuteQueryOperator
+from google.cloud import bigquery
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime, timedelta
 
@@ -55,11 +56,25 @@ def dbt_main_pipeline():
         )
         #delete_job.execute(dict())
 
+    @task
+    def update_data_readiness():
+        with open('/Users/camifandino/Documents/projects/global-banking/dwh/etl/ops/TBL_DATA_READINESS.sql', 'r') as file:
+                sql_query = file.read()
+
+        client = bigquery.Client(project='global-tech-ai')                 
+        #client = bigquery.Client()
+        
+        # Run the query
+        query_job = client.query(sql_query)
+        query_job.result()  # Wait for the query to finish
+        print("Data readiness updated.")
+
     # Define task dependencies
     dbt_task = run_dbt()
     delete_task = delete_no_consent_users()
+    flag_finished_task = update_data_readiness()
 
-    dbt_task >> delete_task
+    dbt_task >> delete_task >> flag_finished_task
 
 # Instantiate the DAG
 dag_instance = dbt_main_pipeline()

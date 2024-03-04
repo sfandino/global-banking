@@ -4,9 +4,10 @@
 -- the timestamp when the data load was completed, the count of records loaded, and the status
 -- of the data load operation.
 
-
-SELECT
-  'TBL_FACT_CUSTOMER_BANK' AS TABLE_NAME,
-  CURRENT_TIMESTAMP() AS DATA_LOAD_DATE,
-  (SELECT COUNT(*) FROM `global-tech-ai.global_banking.TBL_FACT_CUSTOMER_BANK`) AS RECORD_COUNT, -- this is an example of the SQL - This should be templated and work dinamically
-  'COMPLETED' AS STATUS;
+INSERT INTO `global-tech-ai.global_banking_ops.TBL_DATA_READINESS` (TABLE_NAME, DATA_LOAD_DATE, RECORD_COUNT, STATUS)
+  SELECT
+    'TBL_FACT_CUSTOMER_BANK' AS TABLE_NAME,
+    CURRENT_TIMESTAMP() AS DATA_LOAD_DATE,
+    (SELECT COUNT(*) 
+    FROM `global-tech-ai.dbt_global_banking.TBL_FACT_CUSTOMER_BANK`) AS RECORD_COUNT, -- this is an example of the SQL - This should be templated and work dinamically
+    'COMPLETED' AS STATUS;
