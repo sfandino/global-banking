@@ -1,0 +1,8 @@
+version: 1
+
+sources:
+  - name: global_banking
+    database: global-tech-ai # Gcloud Project
+    schema: dbt_global_banking
+    tables:
+      - name: TBL_FACT_CUSTOMER_BANK

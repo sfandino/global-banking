@@ -1,0 +1,178 @@
+[0m11:16:03.281896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108559370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10855b860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10855b590>]}
+
+
+============================== 11:16:03.284512 | 6141837c-8dd2-4782-bf9f-fd070c670984 ==============================
+[0m11:16:03.284512 [info ] [MainThread]: Running with dbt=1.7.9
+[0m11:16:03.284801 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/camifandino/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_global_banking', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:16:03.285062 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/camifandino/.dbt')}
+[0m11:16:03.285203 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:16:03.285646 [debug] [MainThread]: Starter project path: /Users/camifandino/Documents/projects/python_envs/global-tech-p3/lib/python3.12/site-packages/dbt/include/starter_project
+[0m11:16:03.290678 [info ] [MainThread]: 
+Your new dbt project "dbt_global_banking" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:16:03.290877 [info ] [MainThread]: Setting up your profile.
+[0m11:25:15.962887 [info ] [MainThread]: Profile dbt_global_banking written to /Users/camifandino/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:25:16.006184 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 552.8013, "process_user_time": 0.932974, "process_kernel_time": 0.17353, "process_mem_max_rss": "116932608", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:25:16.007548 [debug] [MainThread]: Command `dbt init` succeeded at 11:25:16.007152 after 552.80 seconds
+[0m11:25:16.008406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107573bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043e0350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094923c0>]}
+[0m11:25:16.008894 [debug] [MainThread]: Flushing usage events
+[0m11:25:25.545815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106957ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069bd280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069bcf80>]}
+
+
+============================== 11:25:25.548267 | 3ee967ff-fbda-4501-b7e8-3fee079cef30 ==============================
+[0m11:25:25.548267 [info ] [MainThread]: Running with dbt=1.7.9
+[0m11:25:25.548550 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/camifandino/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:25:25.548853 [info ] [MainThread]: dbt version: 1.7.9
+[0m11:25:25.548989 [info ] [MainThread]: python version: 3.12.2
+[0m11:25:25.549106 [info ] [MainThread]: python path: /Users/camifandino/Documents/projects/python_envs/global-tech-p3/bin/python3.12
+[0m11:25:25.549221 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m11:25:25.782709 [info ] [MainThread]: Using profiles dir at /Users/camifandino/.dbt
+[0m11:25:25.782955 [info ] [MainThread]: Using profiles.yml file at /Users/camifandino/.dbt/profiles.yml
+[0m11:25:25.783109 [info ] [MainThread]: Using dbt_project.yml file at /Users/camifandino/Documents/projects/global-banking/dbt/dbt_project.yml
+[0m11:25:25.783396 [info ] [MainThread]: adapter type: bigquery
+[0m11:25:25.783580 [info ] [MainThread]: adapter version: 1.7.6
+[0m11:25:25.783769 [info ] [MainThread]: Configuration:
+[0m11:25:25.783948 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:25:25.784093 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:25:25.784229 [info ] [MainThread]: Required dependencies:
+[0m11:25:25.784387 [debug] [MainThread]: Executing "git --help"
+[0m11:25:25.807898 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:25:25.808323 [debug] [MainThread]: STDERR: "b''"
+[0m11:25:25.808496 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:25:25.808649 [info ] [MainThread]: Connection:
+[0m11:25:25.808806 [info ] [MainThread]:   method: service-account
+[0m11:25:25.808939 [info ] [MainThread]:   database: global-tech-ai
+[0m11:25:25.809052 [info ] [MainThread]:   execution_project: global-tech-ai
+[0m11:25:25.809163 [info ] [MainThread]:   schema: dbt_global_banking
+[0m11:25:25.809270 [info ] [MainThread]:   location: EU
+[0m11:25:25.809377 [info ] [MainThread]:   priority: interactive
+[0m11:25:25.809488 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:25:25.809594 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:25:25.809700 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:25:25.809827 [info ] [MainThread]:   job_retries: 1
+[0m11:25:25.810019 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:25:25.810158 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m11:25:25.810281 [info ] [MainThread]:   keyfile: /Users/camifandino/Documents/projects/global-banking/infra/global-tech-ai-bq-read-sa.json
+[0m11:25:25.810401 [info ] [MainThread]:   timeout_seconds: 300
+[0m11:25:25.810510 [info ] [MainThread]:   client_id: None
+[0m11:25:25.810621 [info ] [MainThread]:   token_uri: None
+[0m11:25:25.810728 [info ] [MainThread]:   dataproc_region: None
+[0m11:25:25.810833 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:25:25.810940 [info ] [MainThread]:   gcs_bucket: None
+[0m11:25:25.811043 [info ] [MainThread]:   dataproc_batch: None
+[0m11:25:25.811249 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m11:25:25.818832 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:25:25.819282 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:25:25.820697 [debug] [MainThread]: On debug: select 1 as id
+[0m11:25:26.568050 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=global-tech-ai&j=bq:EU:1b69cf24-ffd4-42f0-8d25-e00d4208ca61&page=queryresults
+[0m11:25:26.569448 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:25:26.570038 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:25:26.570479 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/camifandino/Documents/projects/global-banking/dbt/dbt_project.yml> not found
+
+[0m11:25:26.570924 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project global-tech-ai: User does not have bigquery.jobs.create permission in project global-tech-ai.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:25:26.574312 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.0595813, "process_user_time": 0.968376, "process_kernel_time": 0.139928, "process_mem_max_rss": "126402560", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:25:26.575407 [debug] [MainThread]: Command `dbt debug` failed at 11:25:26.575201 after 1.06 seconds
+[0m11:25:26.576143 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:25:26.576671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076ce900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069bd130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069bcd40>]}
+[0m11:25:26.577309 [debug] [MainThread]: Flushing usage events
+[0m11:28:08.646344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ef6450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f294f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f29220>]}
+
+
+============================== 11:28:08.649012 | 280c3429-7310-4b1b-8e23-0932f91134ac ==============================
+[0m11:28:08.649012 [info ] [MainThread]: Running with dbt=1.7.9
+[0m11:28:08.649331 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/camifandino/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:28:08.649599 [info ] [MainThread]: dbt version: 1.7.9
+[0m11:28:08.649736 [info ] [MainThread]: python version: 3.12.2
+[0m11:28:08.649861 [info ] [MainThread]: python path: /Users/camifandino/Documents/projects/python_envs/global-tech-p3/bin/python3.12
+[0m11:28:08.649979 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m11:28:08.891935 [info ] [MainThread]: Using profiles dir at /Users/camifandino/.dbt
+[0m11:28:08.892180 [info ] [MainThread]: Using profiles.yml file at /Users/camifandino/.dbt/profiles.yml
+[0m11:28:08.892330 [info ] [MainThread]: Using dbt_project.yml file at /Users/camifandino/Documents/projects/global-banking/dbt/dbt_project.yml
+[0m11:28:08.892614 [info ] [MainThread]: adapter type: bigquery
+[0m11:28:08.892796 [info ] [MainThread]: adapter version: 1.7.6
+[0m11:28:08.892945 [info ] [MainThread]: Configuration:
+[0m11:28:08.893070 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:28:08.893189 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:28:08.893329 [info ] [MainThread]: Required dependencies:
+[0m11:28:08.893485 [debug] [MainThread]: Executing "git --help"
+[0m11:28:08.905465 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:28:08.905896 [debug] [MainThread]: STDERR: "b''"
+[0m11:28:08.906039 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:28:08.906188 [info ] [MainThread]: Connection:
+[0m11:28:08.906343 [info ] [MainThread]:   method: service-account
+[0m11:28:08.906467 [info ] [MainThread]:   database: global-tech-ai
+[0m11:28:08.906578 [info ] [MainThread]:   execution_project: global-tech-ai
+[0m11:28:08.906687 [info ] [MainThread]:   schema: dbt_global_banking
+[0m11:28:08.906793 [info ] [MainThread]:   location: EU
+[0m11:28:08.906899 [info ] [MainThread]:   priority: interactive
+[0m11:28:08.907003 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:28:08.907106 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:28:08.907210 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:28:08.907311 [info ] [MainThread]:   job_retries: 1
+[0m11:28:08.907413 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:28:08.907519 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m11:28:08.907623 [info ] [MainThread]:   keyfile: /Users/camifandino/Documents/projects/global-banking/infra/global-tech-ai-bq-read-sa.json
+[0m11:28:08.907756 [info ] [MainThread]:   timeout_seconds: 300
+[0m11:28:08.907939 [info ] [MainThread]:   client_id: None
+[0m11:28:08.908069 [info ] [MainThread]:   token_uri: None
+[0m11:28:08.908187 [info ] [MainThread]:   dataproc_region: None
+[0m11:28:08.908297 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:28:08.908403 [info ] [MainThread]:   gcs_bucket: None
+[0m11:28:08.908509 [info ] [MainThread]:   dataproc_batch: None
+[0m11:28:08.908709 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m11:28:08.911830 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:28:08.912208 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:28:08.913574 [debug] [MainThread]: On debug: select 1 as id
+[0m11:28:11.921328 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=global-tech-ai&j=bq:EU:1eba823e-3d38-4ec5-96ff-c31b73805946&page=queryresults
+[0m11:28:12.601895 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:28:12.603211 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:28:12.603743 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/camifandino/Documents/projects/global-banking/dbt/dbt_project.yml> not found
+
+[0m11:28:12.608470 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 3.9924834, "process_user_time": 0.976038, "process_kernel_time": 0.145085, "process_mem_max_rss": "126140416", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:28:12.609661 [debug] [MainThread]: Command `dbt debug` failed at 11:28:12.609411 after 3.99 seconds
+[0m11:28:12.610571 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:28:12.611131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a44d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ed24e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ed1ac0>]}
+[0m11:28:12.611807 [debug] [MainThread]: Flushing usage events
+[0m12:15:40.001188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d79eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109369820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109369490>]}
+
+
+============================== 12:15:40.003833 | 69fed3a8-00f4-49e0-b432-df2799584f23 ==============================
+[0m12:15:40.003833 [info ] [MainThread]: Running with dbt=1.7.9
+[0m12:15:40.004122 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/camifandino/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:15:40.004390 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/camifandino/Documents/projects/global-banking/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:15:40.005663 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.036519833, "process_user_time": 0.766266, "process_kernel_time": 0.064533, "process_mem_max_rss": "97124352", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:15:40.005904 [debug] [MainThread]: Command `dbt test` failed at 12:15:40.005848 after 0.04 seconds
+[0m12:15:40.006061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109159a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109369010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093698e0>]}
+[0m12:15:40.006332 [debug] [MainThread]: Flushing usage events

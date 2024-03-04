@@ -1,0 +1,19 @@
+version: 1
+
+sources:
+  - name: raw_data_api  # Open Banking or APIs
+    database: global-tech-ai  # Gcloud Project
+    schema: external_data
+    tables:
+      - name: TBL_FX_RATE
+
+  - name: raw_data  # Open Banking or APIs
+    database: global-tech-ai  # Gcloud Project
+    schema: global_banking_protected
+    tables:
+      - name: TBL_OB_ACCOUNT
+      - name: TBL_CUSTOMER_CONSENT
+
+
+
+

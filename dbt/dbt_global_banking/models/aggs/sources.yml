@@ -1,0 +1,12 @@
+version: 1
+
+sources:
+  - name: global_banking
+    database: global-tech-ai # Gcloud Project
+    schema: dbt_global_banking
+    tables:
+      - name: TBL_BALANCES_HKD
+      - name: TBL_MONTHLY_AVG_BALANCES_BANK_CUSTOMER
+      - name: TBL_AVG_BALANCES_BANK_CUSTOMER
+      - name: TBL_KEY_COMPETITOR_BANK_CUSTOMER
+      - name: TBL_BANK_COMPETITOR_CHANGE_EVENTS

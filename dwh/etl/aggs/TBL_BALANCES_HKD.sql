@@ -1,5 +1,4 @@
-
-- TBL_BALANCES_HKD Creation Script
+-- TBL_BALANCES_HKD Creation Script
 -- This script generates the TBL_BALANCES_HKD table which stores the HKD equivalent
 -- balances for customer accounts. The balances are converted using the most recent
 -- exchange rates available. The table is a result of joining the account details
